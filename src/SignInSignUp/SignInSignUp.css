@@ -1,0 +1,128 @@
+*{
+    text-align: center;
+    /* background-color: #f7f7f7; */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; 
+    /* Make the container at least as tall as the viewport */
+    /* border: 1px solid black; */
+    /* border: 2px solid rgb(189, 142, 142); */
+margin-top: 10%;
+    padding: 50px;
+    transition: transform 0.3s ease;
+     /* Add a smooth transition for hover effect */
+     background-color: rgb(5, 69, 5);
+  }
+  
+  .container:hover {
+    transform: scale(1.03); /* Scale up the container on hover */
+  }
+/* Apply styles to input fields within the .input_space class */
+.input_space input {
+    height: 25px;
+    width: 100%; /* Make input fields expand to full width of parent (.input_space) */
+    font-size: 17px;
+    padding: 2px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 3px; 
+    /* Add a slight border radius for a rounded appearance */
+  }
+  
+  /* Apply margin to create spacing between input fields */
+  .input_space {
+    margin-bottom: 15px;
+  }
+  
+  
+  
+button{
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    background-color:rgb(132, 16, 240);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+/* CSS in a .css or .scss file */
+.logout,
+.delete {
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition for background color */
+}
+
+.logout {
+  background-color: rgb(132, 16, 240);
+}
+
+.delete {
+  background-color: rgb(251, 21, 21);
+}
+
+/* Hover effect */
+.logout:hover {
+  background-color: #8f0ddf; /* Change the background color on hover */
+}
+
+.delete:hover {
+  background-color: #ec0909; /* Change the background color on hover */
+}
+
+/* Spacing between buttons */
+/* If the buttons are siblings, you can add margin to the top of the second button */
+.delete {
+  margin-top: 30px;
+  margin: 10px; /* Adjust the margin as needed for spacing */
+}
+.heading{
+    /* border: 2px solid red; */
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: rgb(240, 235, 238);
+}
+
+/* CSS in a .css or .scss file */
+/* Base styles for the form */
+.form {
+    width: 50%;
+    margin-top: 7% !important;
+    height: 350px !important; /* Default width for larger screens */
+    padding: 60px;
+    /* margin-left: 60%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  
+  /* Media query for laptop/desktop screens */
+  @media (min-width: 768px) {
+    .form {
+      width: 400px; /* Adjust the width for laptop/desktop screens */
+      height: 400px; /* Set the height and width to be the same */
+    }
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 767px) {
+    .form {
+      width: 80%; /* Adjust the width for mobile screens */
+      height: auto; /* Auto height based on content */
+      padding: 20px; /* Adjust padding for mobile screens */
+    }
+  }
+  
+  
+  /* Add any other styling for form elements as needed */
+  
